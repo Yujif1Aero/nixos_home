@@ -8,24 +8,27 @@
     syntaxHighlighting.enable = true; # シンタックスハイライト
   
    initExtra = ''
-    export HISTSIZE=50000
-    export SAVEHIST=50000
+    export HISTSIZE=10000
+    export SAVEHIST=1000000
     export HISTFILE=~/.zsh_history
-    # コマンドの実行日時を記録
-    export HISTTIMEFORMAT="%F %T "
-    # history コマンドのフォーマットを設定
-    setopt EXTENDED_HISTORY
+    # The meaning of these options can be found in man page of `zshoptions`.
+    setopt HIST_IGNORE_ALL_DUPS  # do not put duplicated command into history list
+    setopt HIST_SAVE_NO_DUPS  # do not save duplicated command
+    setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
+    setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately after execution
+    setopt EXTENDED_HISTORY  # record command start time
   '';
 #     };
     shellAliases = {
       cat = "bat";
       grep = "rg";
       ##      ls = "eza --icons always --classify always";
-      ls  = "ls --color=auto --group-directories-first";
+     ## ls  = "ls --color=auto --group-directories-first";
       la = "eza --icons always --classify always --all ";
       ll = "eza --icons always --long --all --git ";
       tree = "eza --icons always --classify always --tree";
       clip = "xsel --clipboard --input";
+      history = "fc -l 1";
     };
    };
    # oh-my-posh = {
