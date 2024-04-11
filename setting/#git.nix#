@@ -6,15 +6,15 @@ programs.git = {
     difftastic.enable = true;
 
     userName  = "Yuji Shimojima";
-    userEmail = "shimojima@morgenrot.net";
+    userEmail = "yuji.shimojima.s@gmail.com";
 
     extraConfig = {
       core.editor = "emacs";
       merge.tool = "${pkgs.meld}/bin/meld";
       pull.ff = "only";
       init.defaultBranch = "master";
-      github.user = "Yujif1Aero";
-      gitlab.user = "YujiOLB";
+      gitlab.user = "Yujif1Aero";
+      github.user = "YujiOLB";
     };
   };
   }
