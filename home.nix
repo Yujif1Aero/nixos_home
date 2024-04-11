@@ -6,7 +6,7 @@
     ./setting/zsh.nix
     ./setting/git.nix
     ./setting/apps.nix
-   ./developmenttool/tool.nix
+   ./tool.nix
 #    ./developmenttool/apps.nix
   ];
 
