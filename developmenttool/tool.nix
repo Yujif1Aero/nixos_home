@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  stable.packages = with pkgs; [
+  home.packages = with pkgs; [
     #gcc13
     texlive.combined.scheme-full
     #python312
