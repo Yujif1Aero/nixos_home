@@ -7,5 +7,7 @@
    pingu
    ripgrep
    xclip
+   curl
+   unzip
   ];
   }

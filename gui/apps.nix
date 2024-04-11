@@ -12,6 +12,7 @@
     vscode
     rclone
     thunderbird
+   ## paraview
 ##    teams-for-linux
   ];
 

@@ -11,7 +11,7 @@
       inputs = { nixpkgs.follows = "stable"; };
     };
     # ...
-    flake-utils.url = github:numtide/flake-utils;
+    #flake-utils.url = github:numtide/flake-utils;
   };
 # #outputsはこの関数はFlakeの主要な部分で、フレークの出力を定義。引数にinputsをもつ。:<-の前が引数.この場合homeConfigurationsが出力
   outputs = inputs: {  

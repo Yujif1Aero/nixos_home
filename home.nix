@@ -6,8 +6,8 @@
     ./setting/zsh.nix
     ./setting/git.nix
     ./setting/apps.nix
-   ./tool.nix
-#    ./developmenttool/apps.nix
+ 
+    ./developmenttool/tool.nix
   ];
 
   # ...
