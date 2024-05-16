@@ -9,5 +9,6 @@
    xclip
    curl
    unzip
+   tmux
   ];
   }

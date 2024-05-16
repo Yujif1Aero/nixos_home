@@ -7,6 +7,8 @@
     rocmPackages.rocm-smi
     gnuplot
     paraview
+    python310Full
+    (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
   ];
 }
 

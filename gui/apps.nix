@@ -7,9 +7,9 @@
 
   home.packages = with pkgs; [
     gnome.evince # PDFビューアー
-    remmina # VNCクライアント
+    #remmina # VNCクライアント
     slack
-    vscode
+    #vscode
     rclone
     thunderbird
    ## paraview
