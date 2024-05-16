@@ -4,7 +4,7 @@
     texlive.combined.scheme-full
     #python312
     #gnumake
-    rocmPackages.rocm-smi
+    #rocmPackages.rocm-smi
     gnuplot
     paraview
     #python310Full
