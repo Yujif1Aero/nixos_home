@@ -4,11 +4,10 @@
     texlive.combined.scheme-full
     #python312
     #gnumake
-    rocmPackages.rocm-smi
     gnuplot
     paraview
-    python310Full
-   # (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
+   # python310Full
+   (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
   ];
 }
 
