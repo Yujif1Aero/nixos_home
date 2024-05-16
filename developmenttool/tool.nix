@@ -8,7 +8,7 @@
     gnuplot
     paraview
     python310Full
-    (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
+   # (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
   ];
 }
 
