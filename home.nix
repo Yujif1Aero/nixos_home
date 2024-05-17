@@ -6,7 +6,7 @@
     ./setting/zsh.nix
     ./setting/git.nix
     ./setting/apps.nix
- 
+    ./gpu/amd.nix
     ./developmenttool/tool.nix
   ];
 
