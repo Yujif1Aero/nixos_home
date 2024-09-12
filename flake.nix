@@ -2,11 +2,11 @@
   description = "Yuji setting";
 #inputsはFlakeの依存関係を定義するためのフィールド
   inputs = {
-    stable.url = github:NixOS/nixpkgs/nixos-23.11;
+    stable.url = github:NixOS/nixpkgs/nixos-24.05;
     unstable.url = github:NixOS/nixpkgs/nixpkgs-unstable;
-    oldstable.url = github:NixOS/nixpkgs/nixos-22.11;
+    oldstable.url = github:NixOS/nixpkgs/nixos-23.11;
     home-manager = {
-      url = github:nix-community/home-manager/release-23.11;
+      url = github:nix-community/home-manager/release-24.05;
       inputs = { nixpkgs.follows = "stable"; };
     };
     # ...
@@ -17,7 +17,7 @@
     # ...
    homeConfigurations = {
      yujif1aero = inputs.home-manager.lib.homeManagerConfiguration {
-         pkgs = import inputs.unstable {
+         pkgs = import inputs.stable {
          system = "x86_64-linux";
          config.allowUnfree = true; # プロプライエタリなパッケージを許可
        };

@@ -7,7 +7,7 @@
     #rocmPackages.rocm-smi
     gnuplot
     paraview
-    docker
+    #docker
     #python310Full
     (pkgs.python310Full.withPackages (ps: with ps; [ ps.jupyterlab ]))
   ];
