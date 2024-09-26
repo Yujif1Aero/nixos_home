@@ -6,7 +6,7 @@ programs.git = {
     difftastic.enable = true;
 
     userName  = "Yuji Shimojima";
-    userEmail = "shimojima@morgenrot.net";
+    userEmail = "yuji.shimojima@kit.edu";
 
     extraConfig = {
       core.editor = "emacs";
@@ -14,7 +14,7 @@ programs.git = {
       pull.ff = "only";
       init.defaultBranch = "master";
       github.user = "Yujif1Aero";
-      gitlab.user = "YujiOLB";
+      gitlab.user = "Yujif1Aero";
     };
   };
   }

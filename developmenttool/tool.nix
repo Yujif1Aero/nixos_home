@@ -6,6 +6,8 @@
     #gnumake
     gnuplot
     paraview
+    htop
+    zenith
    # python310Full
    (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
   ];
