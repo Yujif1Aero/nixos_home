@@ -2,6 +2,8 @@
   home.packages = with pkgs; [
     #gcc13
     texlive.combined.scheme-full
+    htop
+    zenith
     #python312
     #gnumake
     #rocmPackages.rocm-smi
