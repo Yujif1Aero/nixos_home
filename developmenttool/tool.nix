@@ -8,6 +8,7 @@
     paraview
     htop
     zenith
+    nodejs
    # python310Full
    (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
   ];
