@@ -9,7 +9,7 @@
     htop
     zenith
     nodejs
-    clang-format
+    clang-tools
    # python310Full
    (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
   ];
