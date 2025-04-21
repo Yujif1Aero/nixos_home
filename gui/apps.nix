@@ -12,6 +12,7 @@
     vscode
     rclone
     thunderbird
+    flameshot
 ##    teams-for-linux
   ];
 
