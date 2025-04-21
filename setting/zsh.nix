@@ -6,7 +6,6 @@
     enableCompletion = true; # 自動補完
     enableAutosuggestions = true; # 入力サジェスト
     syntaxHighlighting.enable = true; # シンタックスハイライト
-  
    initExtra = ''
     export HISTSIZE=10000
     export SAVEHIST=1000000
@@ -29,9 +28,9 @@
       tree = "eza --icons always --classify always --tree";
       clip = "xsel --clipboard --input";
       history = "fc -l 1";
+      cdpjroot = "cd $(git rev-parse --show-toplevel)";
     };
    };
    # oh-my-posh = {
-     
    # };
   }
