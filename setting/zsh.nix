@@ -4,9 +4,9 @@
     enable = true;
    ## autocd = true; # cdなしでファイルパスだけで移動
     enableCompletion = true; # 自動補完
-    enableAutosuggestions = true; # 入力サジェスト
+    autosuggestion.enable = true; # 入力サジェスト
     syntaxHighlighting.enable = true; # シンタックスハイライト
-   initExtra = ''
+    initExtra = ''
     export HISTSIZE=10000
     export SAVEHIST=1000000
     export HISTFILE=~/.zsh_history
