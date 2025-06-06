@@ -9,7 +9,8 @@
     gnome.evince # PDFビューアー
     remmina # VNCクライアント
     slack
-    vscode
+##    vscode
+    vscode.fhs
     rclone
     thunderbird
     flameshot
