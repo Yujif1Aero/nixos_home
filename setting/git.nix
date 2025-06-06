@@ -9,7 +9,7 @@ programs.git = {
     userEmail = "yuji.shimojima@kit.edu";
 
     extraConfig = {
-      core.editor = "emacs";
+      core.editor = "vim";
       merge.tool = "${pkgs.meld}/bin/meld";
       pull.ff = "only";
       init.defaultBranch = "master";
