@@ -15,6 +15,9 @@
     flameshot
 ##    teams-for-linux
   ];
+  programs.vscode.enable = true;
+  environment.variables.VSCODE_CREDENTIALS_STORE = "none";
+
   systemd.user.services.x11vnc = {
     Unit = {
       Description = "x11vnc server (user session)";
