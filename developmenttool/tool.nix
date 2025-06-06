@@ -3,7 +3,7 @@
     gcc13
     gdb
     texlive.combined.scheme-full
-    python312
+#    python312
     gnumake
     gnuplot
     paraview
