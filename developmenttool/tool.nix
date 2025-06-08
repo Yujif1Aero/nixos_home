@@ -1,10 +1,10 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    gcc13
-    gdb
+#    gcc13
+#    gdb
     texlive.combined.scheme-full
 #    python312
-    gnumake
+#    gnumake
     gnuplot
     paraview
     htop
