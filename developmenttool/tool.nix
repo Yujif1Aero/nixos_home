@@ -13,8 +13,9 @@
     nodejs
     clang-tools #for emacs
     silver-searcher #for emacs
-   # python310Full
-   (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
+    # python310Full
+    (pkgs.python312.withPackages (ps: with ps; [ jupyterlab ]))
+#   (pkgs.python312Full.withPackages (ps: with ps; [ jupyterlab ])) 
   ];
 }
 
