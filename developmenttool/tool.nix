@@ -15,7 +15,6 @@
     silver-searcher #for emacs
    # python310Full
    (pkgs.python310Full.withPackages (ps: with ps; [ jupyterlab ]))
-   
   ];
 }
 
