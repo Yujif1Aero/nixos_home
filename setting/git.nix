@@ -5,7 +5,7 @@ programs.git = {
     lfs.enable = true;
     difftastic.enable = true;
 
-    userName  = "Yuji Shimojima";
+    userName  = "Yuji Sam Shimojima";
     userEmail = "yuji.shimojima@kit.edu";
 
     extraConfig = {
