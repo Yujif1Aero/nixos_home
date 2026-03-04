@@ -6,7 +6,7 @@
   programs.obs-studio.enable = true;
 
   home.packages = with pkgs; [
-    gnome.evince # PDFビューアー
+    evince # PDFビューアー
     remmina # VNCクライアント
     slack
 ##    vscode

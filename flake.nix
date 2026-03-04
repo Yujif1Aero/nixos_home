@@ -6,8 +6,9 @@
     unstable.url = github:NixOS/nixpkgs/nixpkgs-unstable;
     oldstable.url = github:NixOS/nixpkgs/nixos-23.11;
     home-manager = {
-      url = github:nix-community/home-manager/release-24.05;
-      inputs = { nixpkgs.follows = "stable"; };
+      #      url = github:nix-community/home-manager/release-24.05;
+      url = "github:nix-community/home-manager/master";
+      inputs = { nixpkgs.follows = "unstable"; };
     };
     # ...
     #flake-utils.url = github:numtide/flake-utils;
@@ -17,7 +18,7 @@
     # ...
    homeConfigurations = {
      yujif1aero = inputs.home-manager.lib.homeManagerConfiguration {
-         pkgs = import inputs.stable {
+         pkgs = import inputs.unstable {
          system = "x86_64-linux";
          config.allowUnfree = true; # プロプライエタリなパッケージを許可
        };
