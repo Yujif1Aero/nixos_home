@@ -1,10 +1,10 @@
 {pkgs,pkgs-paraview, ...}: {
   home.packages = with pkgs; [
-    gcc13
-    gdb
+    #gcc13
+    #gdb
     texlive.combined.scheme-full
-    gnumake
-    mpi
+    #gnumake
+    #mpi
     gnuplot
     #    paraview
     pkgs-paraview.paraview
