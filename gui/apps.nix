@@ -14,9 +14,19 @@
     rclone
     thunderbird
     flameshot
-##    teams-for-linux
+    ghostscript   # 追加: PostScriptおよびPDFツール
+    inkscape      # 追加: ベクター画像エディタ
+    ##    teams-for-linux
+    ghostscript
+    inkscape
   ];
-  
+    xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      # PDFファイルをEvinceで開く
+      "application/pdf" = [ "org.gnome.Evince.desktop" ];
+    };
+  };
   systemd.user.services.x11vnc = {
     Unit = {
       Description = "x11vnc server (user session)";
