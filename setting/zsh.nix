@@ -6,7 +6,7 @@
     enableCompletion = true; # 自動補完
     autosuggestion.enable = true; # 入力サジェスト
     syntaxHighlighting.enable = true; # シンタックスハイライト
-    initExtra = ''
+    initContent = ''
     export HISTSIZE=10000
     export SAVEHIST=1000000
     export HISTFILE=~/.zsh_history

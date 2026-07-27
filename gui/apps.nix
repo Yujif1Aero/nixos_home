@@ -19,6 +19,7 @@
     ##    teams-for-linux
     ghostscript
     inkscape
+    filezilla #file 転送
   ];
     xdg.mimeApps = {
     enable = true;
