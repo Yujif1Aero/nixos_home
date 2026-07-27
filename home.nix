@@ -7,6 +7,7 @@
     ./setting/git.nix
     ./setting/apps.nix
     ./developmenttool/tool.nix
+    ./agent.nix
   ];
 
   # ...

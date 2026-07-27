@@ -29,10 +29,11 @@
       clip = "xsel --clipboard --input";
       history = "fc -l 1";
       cdpjroot = "cd $(git rev-parse --show-toplevel)";
-      # GUIで開きたい場合（新しいウィンドウで開く）
-      e = "emacsclient -c -a \"\"";
-      # ターミナル内で開きたい場合
-      et = "emacsclient -t -a \"\"";
+      e="emacsclient -n -a ''";
+      eg="emacsclient -c -n -a ''";
+      enw="emacsclient -nw -a ''";
+      ekill="emacsclient -e '(kill-emacs)'";
+
     };
    };
    # oh-my-posh = {

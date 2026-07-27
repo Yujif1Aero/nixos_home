@@ -5,6 +5,8 @@
     stable.url = github:NixOS/nixpkgs/nixos-24.05;
     unstable.url = github:NixOS/nixpkgs/nixpkgs-unstable;
     oldstable.url = github:NixOS/nixpkgs/nixos-23.11;
+    codex-cli-nix.url = "github:sadjow/codex-cli-nix";
+    
     paraview-nixpkgs.url = "github:NixOS/nixpkgs/c407032be28ca2236f45c49cfb2b8b3885294f7f"; #paraview 5.11.2 for the connectiong other machines's paraview
     home-manager = {
       #      url = github:nix-community/home-manager/release-24.05;

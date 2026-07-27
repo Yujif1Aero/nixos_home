@@ -10,18 +10,18 @@
    curl
    unzip
    tmux
-   emacs
+#   emacs
   ];
-  services.emacs = {
-    enable = true;
-    client.enable = true;
-  };
+  # services.emacs = {
+  #   enable = true;
+  #   client.enable = true;
+  # };
   # デフォルトアプリケーションの設定
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      # テキストファイルをEmacsで開く
-      "text/plain" = [ "emacs.desktop" ];
-    };
-  };
+  # xdg.mimeApps = {
+  #   enable = true;
+  #   defaultApplications = {
+  #     # テキストファイルをEmacsで開く
+  #     "text/plain" = [ "emacs.desktop" ];
+  #   };
+  # };
   }
