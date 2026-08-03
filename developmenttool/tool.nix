@@ -1,16 +1,17 @@
-{ pkgs, pkgs-paraview, ... }:
+{ inputs, pkgs, pkgs-paraview, ... }:
 
+let
+  system = pkgs.stdenv.hostPlatform.system;
+in
 {
-  # Emacs本体とEmacs Lispパッケージ
+  # Emacs本体
   programs.emacs = {
     enable = true;
-
-    # Ubuntuで入れていたEmacs 30.xに合わせる
     package = pkgs.emacs30;
 
-    # Emacs内部の入力メソッドとしてMozcを使う場合
-    extraPackages = epkgs: [
-     pkgs.mozc
+    # Emacs内部でMozcを使用する場合
+    extraPackages = _epkgs: [
+      pkgs.mozc
     ];
   };
 
@@ -30,7 +31,7 @@
         fcitx5-mozc
       ];
 
-      # x11vncを使っているので、おそらくX11環境
+      # X11を使う場合
       waylandFrontend = false;
     };
   };
@@ -50,7 +51,13 @@
     };
   };
 
+  # すべてのパッケージをここにまとめる
   home.packages = with pkgs; [
+    # Codex
+    inputs.codex-cli-nix.packages.${system}.default
+    inputs.llm-agents.packages.${system}.codex-acp
+
+    # 開発ツール
     texlive.combined.scheme-full
     gnuplot
     pkgs-paraview.paraview
@@ -64,8 +71,6 @@
       jupyterlab
     ]))
 
-    # Ubuntuスクリプトで準備用に入れていたもの。
-    # 実際にコマンドとして使う場合だけ必要。
     curl
     gnupg
   ];
