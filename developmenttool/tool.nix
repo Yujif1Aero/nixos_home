@@ -4,6 +4,9 @@ let
   system = pkgs.stdenv.hostPlatform.system;
 in
 {
+  # Terminal emulator
+  programs.alacritty.enable = true;
+
   # Emacs本体
   programs.emacs = {
     enable = true;
