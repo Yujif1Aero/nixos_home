@@ -24,6 +24,9 @@
          pkgs = import inputs.unstable {
          system = "x86_64-linux";
          config.allowUnfree = true; # プロプライエタリなパッケージを許可
+         overlays = [
+           (import ./overlays/ai-agents.nix)
+         ];
        };
        extraSpecialArgs = {
          inherit inputs;

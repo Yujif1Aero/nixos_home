@@ -2,10 +2,10 @@
 {
   home.packages = [
 # Codex
-    inputs.codex-cli-nix.packages.${pkgs.system}.default
+    pkgs.codex
     inputs.llm-agents.packages.${pkgs.system}.codex-acp
 # Claude
-    inputs.llm-agents.packages.${pkgs.system}.claude-code
+    pkgs.claude-code
 
   ];
 }

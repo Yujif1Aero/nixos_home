@@ -56,12 +56,6 @@ in
 
   # すべてのパッケージをここにまとめる
   home.packages = with pkgs; [
-    # Codex
-    inputs.codex-cli-nix.packages.${system}.default
-    inputs.llm-agents.packages.${system}.codex-acp
-
-   inputs.llm-agents.packages.${pkgs.system}.claude-code
-
     # 開発ツール
     texlive.combined.scheme-full
     gnuplot
