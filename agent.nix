@@ -6,6 +6,6 @@
     inputs.llm-agents.packages.${pkgs.system}.codex-acp
 # Claude
     pkgs.claude-code
-
+    inputs.llm-agents.packages.${pkgs.system}.claude-agent-acp
   ];
 }
