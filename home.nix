@@ -19,6 +19,7 @@
     stateVersion = "24.05";
   };
   programs.home-manager.enable = true; # home-manager自身でhome-managerを有効化
+  manual.manpages.enable = false; #これをしないとなんでかわからんが，不正な文字列でマニュアル生成できない
 
 
     programs.direnv = {
