@@ -25,19 +25,19 @@ in
   };
 
   # Fcitx5 + Mozc
-  i18n.inputMethod = {
-    enable = true;
-    type = "fcitx5";
+  # i18n.inputMethod = {
+  #   enable = true;
+  #   type = "fcitx5";
 
-    fcitx5 = {
-      addons = with pkgs; [
-        fcitx5-mozc
-      ];
+  #   fcitx5 = {
+  #     addons = with pkgs; [
+  #       fcitx5-mozc
+  #     ];
 
-      # X11を使う場合
-      waylandFrontend = false;
-    };
-  };
+  #     # X11を使う場合
+  #     waylandFrontend = false;
+  #   };
+  # };
 
   # デフォルトアプリケーション
   xdg.mimeApps = {
@@ -65,7 +65,7 @@ in
     nodejs
     clang-tools
     silver-searcher
-
+    uv
     (python312.withPackages (ps: with ps; [
       jupyterlab
     ]))
