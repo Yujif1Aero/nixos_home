@@ -10,7 +10,7 @@ in
   # Emacs本体
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs30;
+    package = pkgs.emacs;
 
     # Emacs内部でMozcを使用する場合
     extraPackages = _epkgs: [
@@ -64,9 +64,9 @@ in
     zenith
     nodejs
     clang-tools
-    silver-searcher
+    silver-searcher-ng
     uv
-    (python312.withPackages (ps: with ps; [
+    (python3.withPackages (ps: with ps; [
       jupyterlab
     ]))
 
