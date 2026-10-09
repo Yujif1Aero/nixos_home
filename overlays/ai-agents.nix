@@ -3,7 +3,7 @@ final: prev:
 let
   inherit (prev) lib;
 
-  codexVersion = "0.160.0";
+  codexVersion = "0.162.0";
   codexPlatform = "x86_64-unknown-linux-musl";
 
   claudeCodeVersion = "2.1.287";
@@ -15,7 +15,7 @@ in
 
     src = prev.fetchurl {
       url = "https://registry.npmjs.org/@openai/codex/-/codex-${codexVersion}-linux-x64.tgz";
-      hash = "sha256-N6QdYcM5kYK4xye3cJDMehVmvYSdDwkHCgu8b+xMWNw=";
+      hash = "sha256-29NC562JbVPbtQXpJvG4IxS3mp0z4gmwt2Fs7WsGyYM=";
     };
 
     sourceRoot = "package";
