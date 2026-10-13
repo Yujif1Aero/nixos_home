@@ -57,6 +57,7 @@ in
   # すべてのパッケージをここにまとめる
   home.packages = with pkgs; [
     # 開発ツール
+    pandoc
     texlive.combined.scheme-full
     gnuplot
     pkgs-paraview.paraview
