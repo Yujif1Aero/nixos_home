@@ -13,8 +13,11 @@ in
     package = pkgs.emacs;
 
     # Emacs内部でMozcを使用する場合
-    extraPackages = _epkgs: [
+    extraPackages = epkgs: [
       pkgs.mozc
+      # 2026-10-16: prebuilt vterm module (no cmake/libvterm build in straight);
+      # used by `M-x vterm` to run the Claude Code / Codex TUIs inside Emacs
+      epkgs.vterm
     ];
   };
 
