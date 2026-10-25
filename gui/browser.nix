@@ -1,6 +1,7 @@
 {
   programs = {
     firefox.enable = true;
+    firefox.configPath = ".mozilla/firefox";
     google-chrome.enable = true;
     vivaldi = {
       enable = true;
