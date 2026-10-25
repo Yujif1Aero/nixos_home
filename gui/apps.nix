@@ -20,6 +20,7 @@
     ghostscript
     inkscape
     filezilla #file 転送
+    libreoffice-fresh
   ];
     xdg.mimeApps = {
     enable = true;
