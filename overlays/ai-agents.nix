@@ -3,10 +3,10 @@ final: prev:
 let
   inherit (prev) lib;
 
-  codexVersion = "0.162.0";
+  codexVersion = "0.170.0";
   codexPlatform = "x86_64-unknown-linux-musl";
 
-  claudeCodeVersion = "2.1.287";
+  claudeCodeVersion = "2.1.328";
 in
 {
   codex = prev.stdenv.mkDerivation {
@@ -15,7 +15,7 @@ in
 
     src = prev.fetchurl {
       url = "https://registry.npmjs.org/@openai/codex/-/codex-${codexVersion}-linux-x64.tgz";
-      hash = "sha256-29NC562JbVPbtQXpJvG4IxS3mp0z4gmwt2Fs7WsGyYM=";
+      hash = "sha256-Z8S8zOjmw6K5rg5YZ1Dg76x+C4zYXmtHNK1HQxfSzDI=";
     };
 
     sourceRoot = "package";
@@ -57,7 +57,7 @@ in
 
     src = prev.fetchurl {
       url = "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/${claudeCodeVersion}/linux-x64/claude";
-      hash = "sha256-OSBImlEJz/V4aho5LCUndAj/Irx5bV7bnBamDloXGPA=";
+      hash = "sha256-qYLTgDC5fnUISK3Sy7LfbZpw1VRKIsqbIWo0m6JYZeg=";
     };
 
     dontUnpack = true;
