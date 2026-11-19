@@ -3,10 +3,8 @@
 {
   programs.git = {
     enable = true;
-    
     # gitAndTools は廃止されたため、トップレベルの pkgs.gitFull を使用します
     package = pkgs.gitFull;
-    
     # LFS 設定はそのまま維持
     lfs.enable = true;
 
@@ -19,7 +17,7 @@
       };
 
       core = {
-        editor = "vim";
+        editor = "emacs -nw";
       };
 
       merge = {
@@ -41,6 +39,9 @@
       gitlab = {
         user = "Yujif1Aero";
       };
+      credential = {
+        helper = "store";
+};
     };
   };
 
